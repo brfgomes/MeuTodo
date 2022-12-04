@@ -2,15 +2,15 @@ namespace MeuTodo.Models;
 
 public class Todo
 {
-    public Todo(int id, string title, bool done)
+    public Todo(string title, bool done, DateTime date)
     {
-        Id = id;
         Title = title;
         Done = done;
+        Date = DateTime.Now;
     }
 
     public int Id { get; set; }
     public string Title { get; set; }
     public bool Done { get; set; }
+    public DateTime Date { get; set; }
 }
-
